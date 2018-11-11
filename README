@@ -1,0 +1,18 @@
+This repository contains R implementation of the algorithms in "Structured Gaussian Processes with Multiple Kernel Learning", which is in the Proceedings of the 10th Asian Conference on Machine Learning (ACML 2018).
+
+brt_*.R files replicate the experiments of BRT algorithm in R.
+rfr_*.R files replicate the experiments of RFR algorithm in R.
+sgp_*.R files replicate the experiments of SGP algorithm in R.
+sgp2mkl_*.R files replicate the experiments of SGP2MKL algorithm in R.
+
+SGP methods
+------------
+* sgp_train.R => training procedure for regression in R.
+* sgp_test.R => test procedure for regression in R.
+
+SGP2MKL methods
+------------
+* sgp2mkl_train.R => training procedure for regression in R.
+* sgp2mkl_test.R => test procedure for regression in R.
+
+Note: We set the total number of replications to 1 because of the run time of BRT and RFR algorithms (20-40 minutes for each iteration; RFR algorithm requires at least 16 GBs of memory) and SGP2MKL (3-15 minutes for each iteration) but you can set it 100 to obtain the results reported in the paper.
